@@ -39,3 +39,32 @@ int main()
         printf("%d\n",*(arr+i));
     return 0;
 }
+
+
+
+*******************************************************************************************************************************************************
+_____________________----------------- armstrong no. ----------------------------_______________________________________________________________________
+#include <stdio.h>
+#include <math.h>
+void
+main ()
+{
+  int n, sum = 0, anish, r;
+  printf ("Enter the number : ");
+  scanf ("%d", &n);
+  anish = n;
+  while (n > 0)
+    {
+      r = n % 10;
+      sum = sum + pow(r,4);
+      n = n / 10;
+    }
+  if (anish == sum)
+    {
+      printf ("The entered element is Armstrong");
+    }
+  else
+    {
+      printf ("The entered element is not Armstrong");
+    }
+}
